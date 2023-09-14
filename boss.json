@@ -1,0 +1,12 @@
+{
+	"name": "easy-redis-cli",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/danieleteti/delphiredisclient": "^1.0.0",
+		"https://github.com/danieleteti/delphiredisclient": "^v2.2"
+	}
+}

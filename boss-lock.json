@@ -1,0 +1,22 @@
+{
+	"hash": "ebbec61618e0bef11501f6dddb8ac0cd",
+	"updated": "2023-09-14T10:43:59.662795-03:00",
+	"installedModules": {
+		"github.com/danieleteti/delphiredisclient": {
+			"name": "delphiredisclient",
+			"version": "v1.0",
+			"hash": "d56fa90792fa7f255deac3872c2ef839",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/danieleteti/delphiredisclient": {
+			"name": "delphiredisclient",
+			"version": "v2.2",
+			"hash": "d56fa90792fa7f255deac3872c2ef839",
+			"artifacts": {},
+			"failed": false,
+			"changed": true
+		}
+	}
+}
