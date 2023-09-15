@@ -21,6 +21,7 @@ type
 
   TProvidersRedisFactory = class(TInterfacedObject, IProvidersRedisFactory)
   strict private
+    FSenhaRedis: String;
     FServerRedis: String;
   public
     constructor Create;
@@ -41,6 +42,7 @@ begin
   lIni := TIniFile.Create(IncludeTrailingPathDelimiter(GetCurrentDir) + ARQUIVO_CONFIG);
   try
     FServerRedis := lIni.ReadString('redis', 'server', '');
+    FSenhaRedis :=  lIni.ReadString('redis', 'password', '');
   finally
     lIni.Free;
   end;
@@ -52,6 +54,9 @@ begin
   begin
     GServerRedis := TRedisClient.Create(FServerRedis);
     GServerRedis.Connect;
+
+    if FSenhaRedis <> '' then
+      GServerRedis.AUTH(FSenhaRedis);
   end;
 
   result := GServerRedis;
